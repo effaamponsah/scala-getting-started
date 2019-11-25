@@ -20,5 +20,8 @@ object MyApp extends App {
         even(2)
 
 //        5
-//        def odd (number:Int) =
+        def odd (number:Int) = !even(number)
+
+//        6
+        def wordsToLower(words: String*) = words map(_.toLowerCase)
 }
