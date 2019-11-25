@@ -27,14 +27,28 @@ object MyApp extends App {
 
 //        7
         def even2(number:Int) = number match {
-                case number % 2 ==0 => true
+                case i if(i % 2 == 0) => true
                 case _ => false
         }
+
 //        8
         def isWeekenDay(day:String) = day match{
                 case "Friday" | "Saturday" | "Sunday" => true
                 case _ => false
         }
 
+//        9
+        def areWeekendDays(days: String*) = days map( isWeekenDay(_))
 
+//        10
+//        def printDays(days: String*) = days foreach(print(areWeekendDays(days)))
+
+
+//        printDays("Tuesday", "Monday")
+
+//        11
+        def printNtimes(word:String,n:Int) = for(a<-1 to n) print(word)
+
+        printNtimes("Dennis", 1)
 }
+
