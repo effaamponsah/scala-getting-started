@@ -24,4 +24,10 @@ object MyApp extends App {
 
 //        6
         def wordsToLower(words: String*) = words map(_.toLowerCase)
+
+//        7
+        def even2(number:Int) = number match {
+                case number % 2 ==0 => true
+                case number %2 !=0 => false
+        }
 }
