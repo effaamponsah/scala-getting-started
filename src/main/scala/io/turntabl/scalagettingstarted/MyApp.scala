@@ -41,14 +41,11 @@ object MyApp extends App {
         def areWeekendDays(days: String*) = days map( isWeekenDay(_))
 
 //        10
-//        def printDays(days: String*) = days foreach(print(areWeekendDays(days)))
-
-
-//        printDays("Tuesday", "Monday")
+         areWeekendDays("Tuesday") foreach(print)
 
 //        11
         def printNtimes(word:String,n:Int) = for(a<-1 to n) print(word)
 
-        printNtimes("Dennis", 1)
+        printNtimes("Dennis", 100)
 }
 
