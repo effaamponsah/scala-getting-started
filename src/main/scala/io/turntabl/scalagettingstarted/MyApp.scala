@@ -28,6 +28,13 @@ object MyApp extends App {
 //        7
         def even2(number:Int) = number match {
                 case number % 2 ==0 => true
-                case number %2 !=0 => false
+                case _ => false
         }
+//        8
+        def isWeekenDay(day:String) = day match{
+                case "Friday" | "Saturday" | "Sunday" => true
+                case _ => false
+        }
+
+
 }
